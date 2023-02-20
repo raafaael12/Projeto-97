@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vamos Conversar</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="../style.css">
+
+<script>
+	const firebaseConfig = {
+    apiKey: "AIzaSyAtgjqPA7Szh3-sx1ti5uInjcHa1o3Xqf0",
+    authDomain: "projeto-93-d01f3.firebaseapp.com",
+    databaseURL: "https://projeto-93-d01f3-default-rtdb.firebaseio.com",
+    projectId: "projeto-93-d01f3",
+    storageBucket: "projeto-93-d01f3.appspot.com",
+    messagingSenderId: "245406515960",
+    appId: "1:245406515960:web:ae6e62daecc7f28264310d"
+  };
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+
+
+</head>
+<body>
+
+
+<div class="container">
+	<button id="logout" onclick="logout()" class="glyphicon glyphicon-log-out btn btn-danger">Logout</button>
+	<center>
+		<h1 class="header">Vamos Conversar
+			<sup>
+				</sup>
+		</h1>
+		<h3 id="userName" class="color_white">da</h3>
+		<div class="form-group input_div_room_page">
+			<label>Criar Sala:</label>
+			<input type="text" id="roomName" class="form-control" placeholder="Nome da Sala">
+		</div>
+		<button onclick="addRoom();" class="btn btn-success">Adicionar Sala</button>
+		<h3 class="color_white">Salas:</h3>
+
+		<div id="output"></div>
+	</center>
+</div>
+
+
+<script src="kwitter_room.js"></script>
+</body>
+</html>
